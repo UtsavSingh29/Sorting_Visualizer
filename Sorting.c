@@ -1,3 +1,4 @@
+// initial_setup.c
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 #include <stdbool.h>
@@ -6,11 +7,6 @@
 
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 600
-#define BOX_WIDTH 50
-#define BOX_HEIGHT 50
-#define BOX_PADDING 10
-
-void drawArray(SDL_Renderer *renderer, TTF_Font *font, int *arr, int size);
 
 int main(int argc, char *argv[])
 {
@@ -24,11 +20,25 @@ int main(int argc, char *argv[])
         fprintf(stderr, "Error loading font: %s\n", TTF_GetError());
         return 1;
     }
+    bool running = true;
+    SDL_Event event;
+    while (running)
+    {
+        while (SDL_PollEvent(&event))
+        {
+            if (event.type == SDL_QUIT)
+            {
+                running = false;
+            }
+        }
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+        SDL_RenderClear(renderer);
+        SDL_RenderPresent(renderer);
+    }
     TTF_CloseFont(font);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     TTF_Quit();
     SDL_Quit();
-
     return 0;
 }

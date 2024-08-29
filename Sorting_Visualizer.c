@@ -1,4 +1,7 @@
-// initial_setup.c
+void drawLegend() {
+    printf("Drawing Legend...\n");
+    // Add your code here to draw the legend
+}
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 #include <stdbool.h>
@@ -21,6 +24,7 @@ int main(int argc, char *argv[])
         return 1;
     }
     bool running = true;
+    drawLegend()
     SDL_Event event;
     while (running)
     {

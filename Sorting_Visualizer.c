@@ -1,15 +1,14 @@
-void drawLegend() {
-    printf("Drawing Legend...\n");
-}
-void drawButtons() {
-    printf("Drawing Buttons...\n");
-}
-void drawArray() {
-    printf("Drawing Array...\n");
-}
-
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 600
+void drawArray(SDL_Renderer *renderer, TTF_Font *font, int *arr, int size, bool sorted, int selectedIndex, int comparingIndex, bool reset){
+    printf("Drawing Array...\n");
+}
+void drawLegend(SDL_Renderer *renderer, TTF_Font *font){
+    printf("Drawing Legend...\n");
+}
+void drawButtons(SDL_Renderer *renderer, TTF_Font *font){
+    printf("Drawing Buttons...\n");
+}
 
 int main(int argc, char *argv[])
 {

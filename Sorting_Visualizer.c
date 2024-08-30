@@ -1,12 +1,12 @@
 void drawLegend() {
     printf("Drawing Legend...\n");
-    // Add your code here to draw the legend
 }
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_ttf.h>
-#include <stdbool.h>
-#include <stdlib.h>
-#include <stdio.h>
+void drawButtons() {
+    printf("Drawing Buttons...\n");
+}
+void drawArray() {
+    printf("Drawing Array...\n");
+}
 
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 600
@@ -24,8 +24,10 @@ int main(int argc, char *argv[])
         return 1;
     }
     bool running = true;
-    drawLegend()
     SDL_Event event;
+    drawLegend();
+    drawButtons();
+    drawArray();
     while (running)
     {
         while (SDL_PollEvent(&event))
@@ -46,3 +48,5 @@ int main(int argc, char *argv[])
     SDL_Quit();
     return 0;
 }
+
+    

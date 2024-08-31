@@ -1,12 +1,10 @@
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 600
-void drawArray(SDL_Renderer *renderer, TTF_Font *font, int *arr, int size, bool sorted, int selectedIndex, int comparingIndex, bool reset){
-    printf("Drawing Array...\n");
-}
-void drawLegend(SDL_Renderer *renderer, TTF_Font *font){
+
+void drawLegend() {
     printf("Drawing Legend...\n");
 }
-void drawButtons(SDL_Renderer *renderer, TTF_Font *font){
+void drawButtons() {
     printf("Drawing Buttons...\n");
 }
 
@@ -26,7 +24,6 @@ int main(int argc, char *argv[])
     SDL_Event event;
     drawLegend();
     drawButtons();
-    drawArray();
     while (running)
     {
         while (SDL_PollEvent(&event))
@@ -48,4 +45,3 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-    

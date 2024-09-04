@@ -17,5 +17,11 @@ void drawButtons(SDL_Renderer *renderer, TTF_Font *font)
     SDL_FreeSurface(selectionSortSurface);
     SDL_DestroyTexture(selectionSortTexture);
 
-
+    const char *resetText = "Reset";
+    SDL_Surface *resetSurface = TTF_RenderText_Solid(font, resetText, textColor);
+    SDL_Texture *resetTexture = SDL_CreateTextureFromSurface(renderer, resetSurface);
+    SDL_Rect resetRect = {530, 400, resetSurface->w, resetSurface->h};
+    SDL_RenderCopy(renderer, resetTexture, NULL, &resetRect);
+    SDL_FreeSurface(resetSurface);
+    SDL_DestroyTexture(resetTexture);
 }

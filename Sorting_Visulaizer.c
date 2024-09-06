@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     TTF_Init();
     SDL_Window *window = SDL_CreateWindow("Sorting Visualizer",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,WINDOW_WIDTH,WINDOW_HEIGHT,SDL_WINDOW_SHOWN);
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-    TTF_Font *font = TTF_OpenFont("arial.ttf", 24);
+    TTF_Font *font = TTF_OpenFont("./Font/arial.ttf", 24);
     if (font == NULL)
     {
         fprintf(stderr, "Error loading font: %s\n", TTF_GetError());

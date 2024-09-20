@@ -6,8 +6,13 @@ void resetArray(int *arr, int size)
 {
     for (int i = 0; i < size; i++)
     {
-        arr[i] = rand() % 100;
+        arr[i] = originalArray[i];
     }
+    i = 0;
+    j = 0;
+    minIndex = -1;  
+    isSorting = false;  // Stop sorting after reset
+    sorted = false; 
 }
 
 bool bubbleSortStep(SDL_Renderer *renderer, TTF_Font *font, int *arr, int size, int speed)

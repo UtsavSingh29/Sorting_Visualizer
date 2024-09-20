@@ -6,6 +6,7 @@
 #define BOX_HEIGHT 50
 #define BOX_PADDING 10
 #define STEP_DELAY 750 
+//gcc new.c -o new -lSDL2 -lSDL2_ttf `sdl2-config --cflags --libs`
 
 void drawArray(SDL_Renderer *renderer, TTF_Font *font, int *arr, int size, bool sorted, int selectedIndex, int comparingIndex, int selectedAlgorithm, int minIndex,bool reset)
 {
@@ -20,7 +21,7 @@ void drawArray(SDL_Renderer *renderer, TTF_Font *font, int *arr, int size, bool 
             color = (SDL_Color){255, 255, 255, 255}; // White for reset
         }
         else if (idx == selectedIndex)
-        {
+        {   
             color = (SDL_Color){0, 0, 255, 255}; // Blue for selected
         }
         else if (idx == comparingIndex)
@@ -107,14 +108,15 @@ void drawButtons(SDL_Renderer *renderer, TTF_Font *font)
     SDL_Color buttonColor = {0, 0, 0, 255};     // Black
     SDL_Color textColor = {255, 255, 255, 255}; // White
     // Button text
-    const char *buttonLabels[] = {"Bubble Sort", "Selection Sort", "Reset"};
+    const char *buttonLabels[] = {"Bubble Sort", "Selection Sort", "Reset","stop"};
     SDL_Rect buttonRects[] = {
     {130, 400, 150, 40},  // Bubble Sort
     {320, 400, 165, 40},  // Selection Sort
-    {530, 400, 100, 40}   // Reset
+    {530, 400, 100, 40},   // Reset
+    {640,400,100,40}//stop
     };
     // Draw buttons
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 4; i++)
     {
         SDL_SetRenderDrawColor(renderer, buttonColor.r, buttonColor.g, buttonColor.b, buttonColor.a);
         SDL_RenderFillRect(renderer, &buttonRects[i]);

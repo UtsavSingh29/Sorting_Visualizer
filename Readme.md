@@ -36,6 +36,10 @@ brew install sdl2 sdl2_ttf
 ## Windows
 Download the development libraries for SDL2 and SDL2_ttf from the SDL website.
 Extract the contents and set up the environment variables or include directories in your compiler.
+```
+https://www.youtube.com/watch?v=H08t6gD1Y1E&t=13s
+```
+
 Build
 Using GCC
 To build the project, navigate to the project directory in your terminal 

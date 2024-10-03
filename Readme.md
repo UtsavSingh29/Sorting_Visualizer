@@ -86,14 +86,6 @@ Red: Unsorted elements.
 
 Sorting visualizers are excellent educational tools, especially for students learning about sorting algorithms. By watching the algorithms in action, users can develop a more intuitive understanding of how each algorithm works, its efficiency, and its complexity.
 
-## Videos To Learn Sdl2
-```
-https://www.youtube.com/watch?v=XfZ6WrV5Z7Y&pp=ygUKc2RsMlwgaW4gYw%3D%3D
-https://www.youtube.com/watch?v=H08t6gD1Y1E&pp=ygUKc2RsMlwgaW4gYw%3D%3D
-https://www.youtube.com/watch?v=HIV62ato9iA&pp=ygUKc2RsMlwgaW4gYw%3D%3D
-https://www.youtube.com/watch?v=23rD7xdd9ZE&pp=ygUKc2RsMlwgaW4gYw%3D%3D
-https://www.youtube.com/watch?v=ibVihn77SY4&list=PLO02jwa2ZaiCgilk8EEVnfnGWA0LNu4As
-```
 
 ### Usage
 Click on the Bubble Sort button to start the Bubble Sort visualization.

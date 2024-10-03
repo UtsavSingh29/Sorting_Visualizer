@@ -46,7 +46,7 @@ To build the project, navigate to the project directory in your terminal
 
 ## Execute Command
 ```
-gcc -o Sorting_Visualizer Sorting_Visulaizer.c -L. LibraryBubbleSelection.a -lSDL2 -lSDL2_ttf
+gcc -o Sorting_Visualizer Sorting_Visulaizer.c -lSDL2 -lSDL2_ttf
 ```
 Once the build is complete, you can run the program by executing:
 ## Run
